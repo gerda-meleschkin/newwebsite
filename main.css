@@ -13,6 +13,7 @@ mark {
   padding-bottom: 0.4em;
 }
 
+
 h1 {padding-top: 40px;
     font-size: 20px;
     text-align: left;
@@ -24,15 +25,24 @@ h3  {text-align: left;
 
 .btn {
   border: 0;
-  color: white;
+  color: grey;
   padding: 14px 28px;
-  font-size: 20px;
+  font-size: 25px;
   cursor: pointer;
-  border-radius: 10px;
+  border-radius: 0px;
+  text-decoration: none;
   float: right;
+  text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
-.success {background-color: grey;}
+.success {
+  background-color: #ffff2c;
+  color:grey;
+  background-color: #ffff2c;
+  line-height: 0em;
+  padding-top: 0.1em;
+}
 .success:hover {background-color: #d0d0d0;}
 
 .left {
