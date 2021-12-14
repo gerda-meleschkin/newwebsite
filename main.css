@@ -146,7 +146,7 @@ p {
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: grey;
+  background-color: #ffff2c;
 }
 
 .dropdown-content {
@@ -183,10 +183,6 @@ p {
   box-sizing: border-box;
 }
 
-.body {
-  background-color: transparent;
-  padding: 20px;
-}
 
 /* Center website */
 .main {
