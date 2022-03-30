@@ -109,17 +109,27 @@
     <mark>reflection</mark> I really liked this week, but also my head is in so many different projects so its hard to just focus on the fab academy before the design dialoges. But I nevery really designed/used the 3 steps molding/ casting and would like to try it while using blender to make nice looking organic shapes.
     </p>
     <p>
-    <mark>tasks</mark> coming soon
+    <mark>tasks</mark> I wanted to make a mold to be able to cast chocolate. So I start 3d modelling the mold and create a mold for the 3d printer. Then I 3d printed it and sand it a bid. Then I pour chocolate inside.
     </p>
+    <img src="chocolate.png" alt="Naturbild" class="responsive" width="100%" height="auto"/>
     <br>
     <h3>
     week 10: output devices
     </h3>
+    <img class="left" src="arduino.jpg" alt="Naturbild" width="30%" height="auto"/>
     <p>
-    <mark>learning outcome</mark>
+    <mark>learning outcome</mark> The class starts with explaining what microcontrollers are. “A microcontroller (MCU for microcontroller unit) is a small computer on a single integrated circuit. A microcontroller contains one or more CPUs (processor cores) along with memory and programmable input/output peripherals”. There are different microcontrollers which different themselves from their operations and calculations and also if they are inputs or outputs.  Then we have microcontroller  boards which are considered a small computer built on a metal oxide semiconductor circuit chip, like “Arduino”.  We use heathers to connect things on the boards and shields, which are boards that can be plugged on top of the (Arduino) PCB extending its capabilities. The different shields follow the same philosophy as the original toolkit: they are easy to mount, and cheap to produce.
     </p>
     <p>
-    <mark>reflection</mark>
+    Then we have SBC´s, which are computer with all of its essential components such as RAM, CPU, and GPU built-in. Usually, SBCs are small, about the size of a credit card, or a bit larger but still smaller than the average desktop PC., like “Raspberry” Pis. Also we have HAT´s (Hardware Attached on Top). A HAT is an add-on board for (“Raspberry Pi B+”) that conforms to a specific set of rules that will make life easier for users. HAT´s are like shields for the boards but especially for the SBC´s.
+    </p>
+    Then every microcontroller or SBC´s need a power supply, where you need to think about first for what?, should it be portable (batteries) or stationary (cables)? Or is it with cables, then is it AC or DC? Possible supplies could be a lithium battery, usb, cable or solar panel (you need extra hardware for that). Also the network is important, like how far we need to send the information/ range? Is it a long (depending on the application, different frequencies) or short distance (WiFi: high bandwidth, BLE: low consumption or Zigbee…). It could be also a cabled communication, although not very common in the microcontroller boards we do - ethernet? It can also power the board with PoE! It always depends on the interface and the out and inputs, which are depending on the pin amounts, the type and the communication protocols. Peripherals are the ‘extras’ beyond plain number crunching - like digital i/o pins, capacitive touch, ADC, SPI, I2C, UART, I2S, etc…
+    </p>
+    </p>
+    The next important part is the data/processor. For example the RAM. Ram size will determine how much you can do in your code: how many variables can be used at the same time, and because of that how many libraries, and other things your code can integrate. 2-4kb is kind of small, 32kb is good for many projects. This memory is volatile (i.e. it gets erased when the board is unplugged). Then the Flash size / External flash: it will determine how big your code can be in general (the totality of the compiled code you flash into the board). 4kb is small, 256kb is very good for many projects. The ESP8266 has 4Mb (or even 16Mb). Third the EEPROM: you might need this if you want to store small things permanently (i.e. when the board is unplugged it doesn’t get erased). Then the Data streams: do yo need to handle video/audio at high speed/resolution? Better use a SMC. And last the data storage: do yo need to store data on the board? In other words, do you need memory? Maybe use one board that has SD-card compatibility!
+    </p>
+    <p>
+    <mark>reflection</mark> This class really made a lot of electronics parts much more clear. After it I understood more and know better how to start making a pcb board or what the different components are for.
     </p>
     <p>
     <mark>tasks</mark>
