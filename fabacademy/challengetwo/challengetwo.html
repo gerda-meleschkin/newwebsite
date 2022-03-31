@@ -48,8 +48,14 @@
     fabrication: electronics
     </h3>
     <p>
-    eschempatic & codes
-    softwares / materials we used
+    We decided to put all the main controller electronics parts in an independent modular box of the “Hotbox”, under the dehydrator and the incubator, because we want to be able to exchange solar module parts when we use it outdoors.
+    </p>
+    <img class="left" src="eschema.png" alt="Naturbild" width="40%" height="auto"/>
+    <p>
+    We address the function of the electronics in two parts. The Warmth System is managed by a PID controller and the temperature pad, which contains a PID controller. (AC 220V) and a heat pad. 12V - 5A. The Cooling System is managed by the microcontroller ESP32 with the temperature and humidity sensor DHT11, a relay, a fan, a power supply, and wires. The cooling system contains: ESP32 Arduino Board. 3.3 V, DHT11 Digital Temperature Humidity Module Sensor. 5V, Relay Module, Fan. DC12V - 0.28A and a AC-DC Power Supply 12V - 16.7A.
+    </p>
+    <p>
+    The initial idea on day 1 was: we are going to heat the base module and position a fan in that same module to push the hot air to the upper boxes. Point of attention: For the choice of the power supply, first check all the components you are going to use to see how much Amps they need, then choose the power supply accordingly. In our case we also needed a voltage converter as the power supply we had provided 12V (which was good to power the heat mat and the fans) but the ESP32 only needed 3,3V. As we didn’t have any, for a first version we decided to power them separately. But in day 2 we changed the position of the fans and head bed. As the incubator and the dryer need different temperature and humidity conditions, we decided to regulate the temperature in each box by using the fans to cool them down. The heat bed would still be positioned in the base module box and would be set up manually to the target temperature with a PID and there would be one temperature & humidity sensor and a fan in each box (dryer and incubator) to regulate. Then we start wiring the components and programming the microcontroller: We used a relay between the power supply, the fan and the microcontroller to be able to control when the fan turns on or off . The last day we finish wiring the final the right sensors, two temperature & humidity DHT11 sensors. After installing the library DFRobot_DHT11, we finish creating the logic diagrams for both the dryer and the incubator modules (see diagram image) after managing to make the circuit work for a simple test condition. Then we program the conditions in two different files for the dryer module and the incubator module. Once everything was tested and working, we removed the breadboard, soldered the connections that could be assembled and joined positive & negative connections in a connector.
     </p>
     <br>
     <h3>
