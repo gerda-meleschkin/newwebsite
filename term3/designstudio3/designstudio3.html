@@ -47,6 +47,7 @@
     </h3>
     <img src="theplan.png" alt="Naturbild" class="responsive" width="100%" height="auto"/>
     <br>
+    <br>
     <h3>
     preservation
     </h3>
@@ -60,21 +61,90 @@
     <a href="https://ratgeber.bunte.de/banane-trocknen-so-machen-sie-bananen-chips-ganz-einfach-selbst_139416" class="info" style="text-decoration:none;">Banana</a>
     <a href="https://www.tomaten.de/getrocknete-tomaten-selber-machen/#Trocknen_in_der_Sonne" class="info" style="text-decoration:none;">Tomato</a>
     </p>
+    <img src="preservation.png" alt="Naturbild" class="responsive" width="100%" height="auto"/>
     <p>
     <mark>pickled cuecumber</mark> For the pickled cucumbers I got 1kg of cucumbers, 400ml light vinegar, 600ml water, 200g sugar, 1.5 tablespoons salt, 2 teaspoons pepper, 0.5 onions and 4 bay leaves. First, cut the onions into thin strips. Thoroughly brush and wash the cucumbers and soak them overnight in salted water (rising bubbles are normal here). The next day, lightly mortar the juniper berries, allspice, pepper and mustard seeds so that the skins crack. Bring vinegar, sugar, salt and water to a boil, boiling the cucumbers in portions for two minutes each. Cut onions into rings and layer between the cucumbers in the thoroughly cleaned jars. Add 1 bay leaf, 1 teaspoon crushed spices and ¼ teaspoon dill to each jar. Divide the boiling broth among the jars, then immediately close the lids. Turn the jars upside down and leave to infuse in a dark place for two to three weeks.
     <a href="https://www.mein-schoener-garten.de/lifestyle/essen-trinken/gurken-einlegen-rezepte-25716" class="info" style="text-decoration:none;">Cucumer</a>
     </p>
     <br>
     <h3>
-    previous archivments
-    </h3>
-    <p>
-      kris ,...
-    </p>
-    <br>
-    <h3>
     solar brunch
     </h3>
+    <div class="slideshow-container">
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 7</div>
+      <img src="team.png" style="width:100%">
+      <div class="text2">Slow lab x Low tech magazine</div>
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 7</div>
+      <img src="participants.png" style="width:100%">
+      <div class="text2">Participants</div>
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 7</div>
+      <img src="brunch.png" style="width:100%">
+      <div class="text2">Brunch</div>
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 7</div>
+      <img src="ovens.png" style="width:100%">
+      <div class="text2">Solar ovens</div>
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">5 / 7</div>
+      <img src="speech.png" style="width:100%">
+      <div class="text2">Speech</div>
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">6 / 7</div>
+      <img src="speaker.png" style="width:100%">
+      <div class="text2">Solar speakers</div>
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">7 / 7</div>
+      <img src="feedback.png" style="width:100%">
+      <div class="text2">Feedback</div>
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+      <span class="dot" onclick="currentSlide(7)"></span>
+    </div>
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+    <br>
     <p>
     We made an event to get people in touch with different low tech devices and talk about ideas and thoughts how to bring old techniques to out daily life and combine them with new ones. Also to make them more attractive and promote a resilient lifestyle.
     </p>
@@ -89,6 +159,14 @@
     </p>
     <br>
     <img src="questions.png" alt="Naturbild" class="responsive" width="100%" height="auto"/>
+    <br>
+    <br>
+    <h3>
+    topic reflection
+    </h3>
+    <p>
+    text
+    </p>
     <br>
     <br>
     <a href="../term3.html" class="btn success">Term 3</a>
