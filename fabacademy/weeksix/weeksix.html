@@ -96,7 +96,7 @@
     <mark>reflection</mark> This week I recognize that I really need to focus on learning more about electronics. I do not feel sufficiently knowledgeable about the specific parts to be able to programm something on my own, but would love to learn it. In the future I can imagine that programming will be useful more and more and its good to know at least the basics to understand the workflow.
     </p>
     <p>
-    <mark>tasks</mark> The pcb design i did in week 6, i milled this week. First i saved the pcb-file from KiCad as a SVG-file and opened it in illustrator. Then i changed the colors, made the lines, holes and the outline in three different layers and saved the three layers separatly as a PNG. Then I openeded and start a new programm "PCB CBA". I set up separatly all three rml files. In the mashine we glue the plate on it so it sticks good. For the outline and holes we need the same bid (1/32)and for the traces another (1/64).
+    <mark>tasks</mark> text
     </p>
     <br>
     <h3>
@@ -129,15 +129,16 @@
     </p>
     Then every microcontroller or SBC´s need a power supply, where you need to think about first for what?, should it be portable (batteries) or stationary (cables)? Or is it with cables, then is it AC or DC? Possible supplies could be a lithium battery, usb, cable or solar panel (you need extra hardware for that). Also the network is important, like how far we need to send the information/ range? Is it a long (depending on the application, different frequencies) or short distance (WiFi: high bandwidth, BLE: low consumption or Zigbee…). It could be also a cabled communication, although not very common in the microcontroller boards we do - ethernet? It can also power the board with PoE! It always depends on the interface and the out and inputs, which are depending on the pin amounts, the type and the communication protocols. Peripherals are the ‘extras’ beyond plain number crunching - like digital i/o pins, capacitive touch, ADC, SPI, I2C, UART, I2S, etc…
     </p>
+    <img class="left" src="pcbmill.png" alt="Naturbild" width="50%" height="auto"/>
+    <img class="left" src="milling.gif" alt="Naturbild" width="30%" height="auto"/>
     </p>
     The next important part is the data/processor. For example the RAM. Ram size will determine how much you can do in your code: how many variables can be used at the same time, and because of that how many libraries, and other things your code can integrate. 2-4kb is kind of small, 32kb is good for many projects. This memory is volatile (i.e. it gets erased when the board is unplugged). Then the Flash size / External flash: it will determine how big your code can be in general (the totality of the compiled code you flash into the board). 4kb is small, 256kb is very good for many projects. The ESP8266 has 4Mb (or even 16Mb). Third the EEPROM: you might need this if you want to store small things permanently (i.e. when the board is unplugged it doesn’t get erased). Then the Data streams: do yo need to handle video/audio at high speed/resolution? Better use a SMC. And last the data storage: do yo need to store data on the board? In other words, do you need memory? Maybe use one board that has SD-card compatibility!
     </p>
-    <img class="left" src="pcbmill.png" alt="Naturbild" width="50%" height="auto"/>
     <p>
     <mark>reflection</mark> This class really made a lot of electronics parts much more clear. After it I understood more and know better how to start making a pcb board or what the different components are for.
     </p>
     <p>
-    <mark>tasks</mark>
+    <mark>tasks</mark> The pcb design i did in week 6, i milled this week. First i saved the pcb-file from KiCad as a SVG-file and opened it in illustrator. Then i changed the colors, made the lines, holes and the outline in three different layers and saved the three layers separatly as a PNG. Then I openeded and start a new programm "PCB CBA". I set up separatly all three rml files. In the mashine we glue the plate on it so it sticks good. For the outline and holes we need the same bid (1/32)and for the traces another (1/64).
     </p>
     <br>
     <a href="../fabacademy.html" class="btn success">FABACADEMY</a>
