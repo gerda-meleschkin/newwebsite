@@ -44,8 +44,6 @@
     <mark>tasks</mark> After designing and milling the PCB design, I soldered the components to my pcb and tried it out. I have sensors for temperature and buttons.
     <a href="LED_THERMOMETER_NTC.ino" class="info" style="text-decoration:none;">View code</a>
     </p>
-    <p>
-    </p>
     <br>
     <h3>
     week 14: networking & communications
@@ -58,11 +56,13 @@
     <p>
     The networking could work wired or wireless. Wired you have different types as well. Serial and parallel. Parallel interfaces transfer multiple bits at the same time. They usually require buses of data - transmitting across eight, sixteen, or more wires. Can be with high speeds, but with a lot of wires. Serial interfaces stream their data with a reference signal, one single bit at a time These interfaces one wire, usually never more than four. Then you can make a difference in synchronous and asynchronous. Asynchronous works without an external clock, synchronous without. Asynchronous communication include: RX/TX and UART. Synchronous include I2C and SPI. The wireless version works with antennas like: monopole, dipole, helical, half Wave dipole or patch antenna´s. There is also a range-Power-Dbi Gain, where dB means decibels, we use this unit to measure the level of sound, but in radio we also use dB to measure signal strength.
     </p>
+    <img class="left" src="code.png" alt="Naturbild" width="30%" height="auto"/>
+    <img class="left" src="workingnetwork.gif" alt="Naturbild" width="45%" height="auto"/>
     <p>
     <mark>reflection</mark> I just made a plan because i realised the master is almost over and also we need to finish all the deliveries.
     </p>
     <p>
-    <mark>tasks</mark> coming soon
+    <mark>tasks</mark> The task was to send a message between two microcontrollers (boards). First we set up the two microcontroller, with cables and bread board and connected them to the Arduino program. Also we followed the tutorial which included the “Writer” and “Reader” codes, where one microcontroller is the writer and the other one is the reader. We used the incoming byte 13 which refers to carriage return which will help us translate the numbers into letters. Also we added codes so we could see the name of the person sending the message. Then we connected both boards both ways so the communication would go forwards and backwards.
     </p>
     <br>
     <h3>
